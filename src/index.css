@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.result {
+  @apply grid place-items-center h-[40vh] p-3
+}
+
+.result img {
+  @apply w-[200px] rounded-xl
+}
+
+.stylesContainer {
+  @apply p-4 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5 bg-white
+}
+
+.stylesContainer button {
+  @apply border-2 border-zinc-900 rounded-md overflow-hidden
+}
+
+.slideMenu {
+  @apply rounded-tl-xl rounded-tr-xl bg-white p-3
+}
+
+.slideMenu div {
+  @apply flex gap-2 overflow-y-hidden overflow-x-scroll sm:pb-2
+
+}
+
+.slideMenu div::-webkit-scrollbar {
+  @apply bg-transparent h-[10px]
+}
+.slideMenu div::-webkit-scrollbar-thumb {
+  @apply sm:bg-zinc-500 rounded-full
+}
+
+.slideMenu div button {
+  @apply border-2 border-zinc-800 whitespace-nowrap px-2 rounded-md
+}
+
+.clicked {
+  @apply bg-zinc-800 text-white;
+}
+
+.backroundPicker {
+  @apply p-4 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5 bg-white
+}
+
+.backroundPicker button {
+  @apply border-2 border-zinc-900 rounded-md overflow-hidden
+}
+
+.customContainer {
+  @apply p-4 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5 bg-white
+}
+
+.customContainer button {
+  @apply border-2 border-zinc-900 rounded-md overflow-hidden
+}
